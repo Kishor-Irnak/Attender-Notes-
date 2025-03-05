@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-xl font-bold mb-4">Upload PDF</h2>
+        
+        <input type="text" id="pdfTitle" placeholder="Enter PDF title" 
+               class="w-full p-2 border rounded mb-2">
+        <input type="file" id="pdfFile" accept="application/pdf" 
+               class="w-full p-2 border rounded mb-2">
+        <button onclick="uploadPDF()" 
+                class="w-full bg-blue-500 text-white p-2 rounded">
+            Upload
+        </button>
+        
+        <h2 class="text-lg font-bold mt-6">Uploaded PDFs</h2>
+        <ul id="pdfList" class="mt-4"></ul>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
